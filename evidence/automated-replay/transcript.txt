@@ -1,0 +1,121 @@
+127.0.0.1 - - [17/Oct/2026 11:00:27] "GET /health HTTP/1.1" 200 -
+{"request_id": "5ba8df32-59a3-45e4-a700-d809da9311dd", "path": "/health", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:27] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:27] "POST /notes HTTP/1.1" 201 -
+{"request_id": "dc0ea6e4-b8ca-434c-90b5-1c579c528b3e", "path": "/notes", "status": 201}
+127.0.0.1 - - [17/Oct/2026 11:00:27] "POST /notes HTTP/1.1" 201 -
+127.0.0.1 - - [17/Oct/2026 11:00:27] "GET / HTTP/1.1" 200 -
+{"request_id": "b351f3bd-7637-4503-8048-c2783520e5da", "path": "/", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:27] "GET /health HTTP/1.1" 200 -
+{"request_id": "84fce49b-4c8c-4d53-8019-351858f217f5", "path": "/health", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:27] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:27] "POST /notes HTTP/1.1" 201 -
+{"request_id": "c04f8d50-7e95-44fd-a7e5-adbd5b68346a", "path": "/notes", "status": 201}
+127.0.0.1 - - [17/Oct/2026 11:00:27] "POST /notes HTTP/1.1" 201 -
+127.0.0.1 - - [17/Oct/2026 11:00:27] "GET / HTTP/1.1" 200 -
+{"request_id": "60030d37-377f-403b-9d04-0d656cd77156", "path": "/", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 502 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+{"request_id": "c6b335bd-083c-4344-92c9-39df8c539b61", "path": "/health", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+{"request_id": "1bb670a9-6c88-4104-b548-5583d5fd25a1", "path": "/notes", "status": 201}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+{"request_id": "6d8a77a5-3351-491f-af77-0d7a92b2a7cd", "path": "/", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+PASS portable scenario: stopped-backend
+{"request_id": "42d1909d-b712-4988-82df-b98cade1ecc9", "path": "/health", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+{"request_id": "15af5ef0-4bd9-4f01-b567-9ba3cdddb66c", "path": "/notes", "status": 201}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+{"request_id": "d2890410-65fa-41e3-85de-70e4716d215f", "path": "/", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 502 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+{"request_id": "ae4b3d1d-ea60-4816-bc34-ec1b80e2503d", "path": "/health", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+{"request_id": "c68d57a4-5b38-46f6-8306-2ef1388fceac", "path": "/notes", "status": 201}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+{"request_id": "f98cd82e-20e3-4cff-b6a9-583a3bbc9d87", "path": "/", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+PASS portable scenario: wrong-port
+{"request_id": "17a03053-e90a-4452-92c8-ec98715749d2", "path": "/health", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+{"request_id": "d8c242e2-d270-4f2b-a904-07f1ead8ffa7", "path": "/notes", "status": 201}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+{"request_id": "418ab865-a7a7-4ba8-b659-96d4e8d7b70e", "path": "/", "status": 200}
+{"request_id": "6e4a4b5c-cd7f-4672-9f64-b29ab9635869", "errno": 13, "detail": "[Errno 13] Permission denied: '/tmp/support-replay-o_l5txm8/data/notes.txt'"}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 500 -
+{"request_id": "6e4a4b5c-cd7f-4672-9f64-b29ab9635869", "path": "/notes", "status": 500}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 500 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+{"request_id": "78cf63c0-bdf1-4f09-b89b-abba3d2db035", "path": "/health", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+{"request_id": "06968c6d-e45c-496a-8548-c960095bc2b8", "path": "/notes", "status": 201}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+{"request_id": "7ef79ed4-6245-4047-9077-7e51b60bfb97", "path": "/", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+PASS portable scenario: permissions
+{"request_id": "a9dc0f41-a5d1-4159-8a24-0fc8878c5dc8", "path": "/health", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+{"request_id": "0a02596b-bc9e-47c7-b5e9-b3c08cc05013", "path": "/notes", "status": 201}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+{"request_id": "517a98e7-bdb4-4c8c-a01d-a3a1e6332b78", "path": "/", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+{"request_id": "fb5f28a9-a793-4a1a-8950-ab084109c917", "errno": 28, "detail": "[Errno 28] No space left on device"}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 500 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 500 -
+{"request_id": "fb5f28a9-a793-4a1a-8950-ab084109c917", "path": "/notes", "status": 500}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+{"request_id": "226f65e4-ee28-4897-b235-d8a6f5259495", "path": "/health", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+{"request_id": "a2727792-ea0e-4898-8b27-c95ce9c42de6", "path": "/notes", "status": 201}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+{"request_id": "4f1d4b18-08f0-428a-b746-a14dbaf0d91b", "path": "/", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+PASS portable scenario: storage-error
+{"request_id": "bec4bb92-3757-41bc-9290-06e658a3214d", "path": "/health", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+{"request_id": "42af89f9-9cb3-4787-849b-7dd4779f89b9", "path": "/notes", "status": 201}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+{"request_id": "1298971b-a1a5-4806-8ded-be0938803d84", "path": "/", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 504 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+{"request_id": "30d3754f-554f-4bff-81b5-ae8aadc19ff4", "path": "/health", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+{"request_id": "a72dae90-e401-4474-ab76-9045fa587e46", "path": "/health", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+{"request_id": "9a866219-71b2-4ca8-ac0a-32ca81d074bc", "path": "/notes", "status": 201}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "POST /notes HTTP/1.1" 201 -
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+{"request_id": "fa3d0965-5116-4b38-b8e3-cd58879d78cf", "path": "/", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:00:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 11:00:33] "GET / HTTP/1.1" 200 -
+PASS portable scenario: timeout
+{"request_id": "c07e6b75-45c8-47f5-ad46-97699b7a0cc4", "path": "/", "status": 200}
+All 5 portable scenarios reproduced and recovered.

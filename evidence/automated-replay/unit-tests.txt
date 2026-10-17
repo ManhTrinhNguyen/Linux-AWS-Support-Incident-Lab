@@ -1,0 +1,28 @@
+test_full_storage (test_app.AppTests.test_full_storage) ... {"request_id": "a439ebcd-a48d-46d2-b4b8-18b673b294b4", "errno": 28, "detail": "[Errno 28] No space left on device"}
+127.0.0.1 - - [17/Oct/2026 11:01:14] "POST /notes HTTP/1.1" 500 -
+{"request_id": "a439ebcd-a48d-46d2-b4b8-18b673b294b4", "path": "/notes", "status": 500}
+ok
+test_health_and_unknown_route (test_app.AppTests.test_health_and_unknown_route) ... 127.0.0.1 - - [17/Oct/2026 11:01:14] "GET /health HTTP/1.1" 200 -
+{"request_id": "a9b09fba-3653-4e49-ae73-8afdcd079946", "path": "/health", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:01:14] "GET /missing HTTP/1.1" 404 -
+{"request_id": "6805b934-0aec-46b4-a66b-6791dfbb2b53", "path": "/missing", "status": 404}
+ok
+test_permission_failure (test_app.AppTests.test_permission_failure) ... {"request_id": "02f815ee-1fdc-483b-b5fe-d506f57cbcef", "errno": 13, "detail": "[Errno 13] Permission denied"}
+127.0.0.1 - - [17/Oct/2026 11:01:14] "POST /notes HTTP/1.1" 500 -
+{"request_id": "02f815ee-1fdc-483b-b5fe-d506f57cbcef", "path": "/notes", "status": 500}
+ok
+test_slow_request_leaves_health_available (test_app.AppTests.test_slow_request_leaves_health_available) ... 127.0.0.1 - - [17/Oct/2026 11:01:14] "GET / HTTP/1.1" 200 -
+{"request_id": "8b84e26b-d757-4b9d-83a5-1afc5ca83e14", "path": "/", "status": 200}
+127.0.0.1 - - [17/Oct/2026 11:01:14] "GET /health HTTP/1.1" 200 -
+{"request_id": "267166fe-a991-4cfb-94a5-d4c95d109cb4", "path": "/health", "status": 200}
+ok
+test_write_and_unknown_post (test_app.AppTests.test_write_and_unknown_post) ... 127.0.0.1 - - [17/Oct/2026 11:01:14] "POST /notes HTTP/1.1" 201 -
+{"request_id": "fdf9dc93-a2f0-4254-ac12-185ea71eaf2d", "path": "/notes", "status": 201}
+127.0.0.1 - - [17/Oct/2026 11:01:14] "POST /missing HTTP/1.1" 404 -
+{"request_id": "a0ca4049-60d2-442c-8a55-a00039931b56", "path": "/missing", "status": 404}
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.513s
+
+OK

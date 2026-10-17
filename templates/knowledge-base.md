@@ -1,0 +1,8 @@
+# [User-facing problem]
+Applies to: [environment]
+Symptoms: [what the user sees]
+Checks: [how to distinguish this cause from similar ones]
+Resolution: [numbered actions with expected outcomes]
+Verification: [repeat the failed action]
+Escalate when: [conditions and evidence to collect]
+Last verified: [actual date and environment]

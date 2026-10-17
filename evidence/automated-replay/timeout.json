@@ -1,0 +1,46 @@
+{
+  "scenario": "timeout",
+  "executed_at_utc": "2026-10-17T15:00:28.860819+00:00",
+  "execution": "Automated assistant execution; portable Python proxy, not Nginx/Docker",
+  "injection": "Actual five-second handler delay exceeds Python proxy timeout of 0.7 seconds.",
+  "before": [
+    {
+      "status": 200,
+      "body": "{\"status\": \"ok\", \"request_id\": \"bec4bb92-3757-41bc-9290-06e658a3214d\"}",
+      "elapsed_seconds": 0.002
+    },
+    {
+      "status": 201,
+      "body": "{\"status\": \"saved\", \"request_id\": \"42af89f9-9cb3-4787-849b-7dd4779f89b9\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 200,
+      "body": "{\"service\": \"support-incident-lab\", \"request_id\": \"1298971b-a1a5-4806-8ded-be0938803d84\"}",
+      "elapsed_seconds": 0.001
+    }
+  ],
+  "failure": {
+    "status": 504,
+    "body": "portable proxy: upstream timeout",
+    "elapsed_seconds": 0.702
+  },
+  "recovery": "Remove the delay marker; repeat all application checks.",
+  "after": [
+    {
+      "status": 200,
+      "body": "{\"status\": \"ok\", \"request_id\": \"a72dae90-e401-4474-ab76-9045fa587e46\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 201,
+      "body": "{\"status\": \"saved\", \"request_id\": \"9a866219-71b2-4ca8-ac0a-32ca81d074bc\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 200,
+      "body": "{\"service\": \"support-incident-lab\", \"request_id\": \"fa3d0965-5116-4b38-b8e3-cd58879d78cf\"}",
+      "elapsed_seconds": 0.001
+    }
+  ]
+}

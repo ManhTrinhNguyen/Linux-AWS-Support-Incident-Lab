@@ -1,0 +1,46 @@
+{
+  "scenario": "storage-error",
+  "executed_at_utc": "2026-10-17T15:00:28.148360+00:00",
+  "execution": "Automated assistant execution; portable Python proxy, not Nginx/Docker",
+  "injection": "Redirect note writes to Linux /dev/full, which returns real ENOSPC. No filesystem was filled.",
+  "before": [
+    {
+      "status": 200,
+      "body": "{\"status\": \"ok\", \"request_id\": \"a9dc0f41-a5d1-4159-8a24-0fc8878c5dc8\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 201,
+      "body": "{\"status\": \"saved\", \"request_id\": \"0a02596b-bc9e-47c7-b5e9-b3c08cc05013\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 200,
+      "body": "{\"service\": \"support-incident-lab\", \"request_id\": \"517a98e7-bdb4-4c8c-a01d-a3a1e6332b78\"}",
+      "elapsed_seconds": 0.001
+    }
+  ],
+  "failure": {
+    "status": 500,
+    "body": "{\"error\": \"storage_full\", \"request_id\": \"fb5f28a9-a793-4a1a-8950-ab084109c917\"}",
+    "elapsed_seconds": 0.001
+  },
+  "recovery": "Remove the device symlink and allow a regular note file to be created.",
+  "after": [
+    {
+      "status": 200,
+      "body": "{\"status\": \"ok\", \"request_id\": \"226f65e4-ee28-4897-b235-d8a6f5259495\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 201,
+      "body": "{\"status\": \"saved\", \"request_id\": \"a2727792-ea0e-4898-8b27-c95ce9c42de6\"}",
+      "elapsed_seconds": 0.002
+    },
+    {
+      "status": 200,
+      "body": "{\"service\": \"support-incident-lab\", \"request_id\": \"4f1d4b18-08f0-428a-b746-a14dbaf0d91b\"}",
+      "elapsed_seconds": 0.001
+    }
+  ]
+}

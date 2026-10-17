@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+*.pem
+*.key
+.terraform/
+*.tfstate*
+*.tfvars
+*.tfplan
+crash.log
+evidence/private/

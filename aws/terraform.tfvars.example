@@ -1,0 +1,3 @@
+region     = "us-west-2"
+admin_cidr = "203.0.113.10/32" # Replace this documentation address with YOUR public IPv4.
+key_name   = "replace-with-your-existing-key-pair"

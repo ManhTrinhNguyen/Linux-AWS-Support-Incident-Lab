@@ -1,0 +1,46 @@
+{
+  "scenario": "stopped-backend",
+  "executed_at_utc": "2026-10-17T15:00:28.118800+00:00",
+  "execution": "Automated assistant execution; portable Python proxy, not Nginx/Docker",
+  "injection": "Stop the actual local application HTTP server.",
+  "before": [
+    {
+      "status": 200,
+      "body": "{\"status\": \"ok\", \"request_id\": \"84fce49b-4c8c-4d53-8019-351858f217f5\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 201,
+      "body": "{\"status\": \"saved\", \"request_id\": \"c04f8d50-7e95-44fd-a7e5-adbd5b68346a\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 200,
+      "body": "{\"service\": \"support-incident-lab\", \"request_id\": \"60030d37-377f-403b-9d04-0d656cd77156\"}",
+      "elapsed_seconds": 0.001
+    }
+  ],
+  "failure": {
+    "status": 502,
+    "body": "portable proxy: upstream connection failed",
+    "elapsed_seconds": 0.002
+  },
+  "recovery": "Restart the local server on its original port.",
+  "after": [
+    {
+      "status": 200,
+      "body": "{\"status\": \"ok\", \"request_id\": \"c6b335bd-083c-4344-92c9-39df8c539b61\"}",
+      "elapsed_seconds": 0.002
+    },
+    {
+      "status": 201,
+      "body": "{\"status\": \"saved\", \"request_id\": \"1bb670a9-6c88-4104-b548-5583d5fd25a1\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 200,
+      "body": "{\"service\": \"support-incident-lab\", \"request_id\": \"6d8a77a5-3351-491f-af77-0d7a92b2a7cd\"}",
+      "elapsed_seconds": 0.001
+    }
+  ]
+}

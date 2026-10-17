@@ -1,0 +1,46 @@
+{
+  "scenario": "permissions",
+  "executed_at_utc": "2026-10-17T15:00:28.139313+00:00",
+  "execution": "Automated assistant execution; portable Python proxy, not Nginx/Docker",
+  "injection": "Set actual local data-directory mode to 0500.",
+  "before": [
+    {
+      "status": 200,
+      "body": "{\"status\": \"ok\", \"request_id\": \"17a03053-e90a-4452-92c8-ec98715749d2\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 201,
+      "body": "{\"status\": \"saved\", \"request_id\": \"d8c242e2-d270-4f2b-a904-07f1ead8ffa7\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 200,
+      "body": "{\"service\": \"support-incident-lab\", \"request_id\": \"418ab865-a7a7-4ba8-b659-96d4e8d7b70e\"}",
+      "elapsed_seconds": 0.001
+    }
+  ],
+  "failure": {
+    "status": 500,
+    "body": "{\"error\": \"write_failed\", \"request_id\": \"6e4a4b5c-cd7f-4672-9f64-b29ab9635869\"}",
+    "elapsed_seconds": 0.001
+  },
+  "recovery": "Restore owner write permission with mode 0700.",
+  "after": [
+    {
+      "status": 200,
+      "body": "{\"status\": \"ok\", \"request_id\": \"78cf63c0-bdf1-4f09-b89b-abba3d2db035\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 201,
+      "body": "{\"status\": \"saved\", \"request_id\": \"06968c6d-e45c-496a-8548-c960095bc2b8\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 200,
+      "body": "{\"service\": \"support-incident-lab\", \"request_id\": \"7ef79ed4-6245-4047-9077-7e51b60bfb97\"}",
+      "elapsed_seconds": 0.001
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "scenario": "wrong-port",
+  "executed_at_utc": "2026-10-17T15:00:28.129875+00:00",
+  "execution": "Automated assistant execution; portable Python proxy, not Nginx/Docker",
+  "injection": "Point Python proxy at a bound, non-listening port.",
+  "before": [
+    {
+      "status": 200,
+      "body": "{\"status\": \"ok\", \"request_id\": \"42d1909d-b712-4988-82df-b98cade1ecc9\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 201,
+      "body": "{\"status\": \"saved\", \"request_id\": \"15af5ef0-4bd9-4f01-b567-9ba3cdddb66c\"}",
+      "elapsed_seconds": 0.004
+    },
+    {
+      "status": 200,
+      "body": "{\"service\": \"support-incident-lab\", \"request_id\": \"d2890410-65fa-41e3-85de-70e4716d215f\"}",
+      "elapsed_seconds": 0.001
+    }
+  ],
+  "failure": {
+    "status": 502,
+    "body": "portable proxy: upstream connection failed",
+    "elapsed_seconds": 0.001
+  },
+  "recovery": "Restore the proxy target to the actual backend listener.",
+  "after": [
+    {
+      "status": 200,
+      "body": "{\"status\": \"ok\", \"request_id\": \"ae4b3d1d-ea60-4816-bc34-ec1b80e2503d\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 201,
+      "body": "{\"status\": \"saved\", \"request_id\": \"c68d57a4-5b38-46f6-8306-2ef1388fceac\"}",
+      "elapsed_seconds": 0.001
+    },
+    {
+      "status": 200,
+      "body": "{\"service\": \"support-incident-lab\", \"request_id\": \"f98cd82e-20e3-4cff-b6a9-583a3bbc9d87\"}",
+      "elapsed_seconds": 0.001
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+name: Verify incident lab
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  lab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Application integration tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Compose incident and recovery checks
+        run: bash scripts/smoke.sh
