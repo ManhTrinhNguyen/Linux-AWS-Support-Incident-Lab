@@ -121,16 +121,6 @@ the environment when finished. The default local lab creates no AWS resources.
 If adapting your existing Terraform project, use a separate sandbox instance and
 security group; reuse the runbooks without running fault commands against other workloads.
 
-## 7. Make this your own portfolio
-- Complete at least three cases and commit your sanitized tickets under evidence/.
-- Write one knowledge-base article using the template.
-- Record a short demonstration where you explain your evidence and recovery.
-- Run the full smoke test and link your passing GitHub Actions run in this README.
-- Only then adapt the truthful bullet suggestions in [resume-guide.md](docs/resume-guide.md).
-
-A repository alone does not guarantee recruiter screening or an interview. The
-strongest evidence is your ability to reproduce an unfamiliar failure and explain
-why your fix works.
 
 ## Tests
 No third-party Python packages are required:
@@ -157,47 +147,3 @@ http://127.0.0.1:8081` on one line and update curl/browser URLs. The smoke scrip
 assumes 8080. If the app fails to start, inspect `docker compose logs app`.
 If Docker is not reachable, start Docker Desktop or check daemon permissions.
 
-## Publish to GitHub
-Create an EMPTY repository on GitHub (do not add a remote README or license).
-Review files for secrets and private evidence, then run in this folder:
-```bash
-git init
-git add .
-git diff --cached --stat
-git commit -m "Add Linux and AWS support incident lab"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/linux-aws-support-incident-lab.git
-git push -u origin main
-```
-GitHub authentication and your Git user.name/user.email must already be configured.
-Do not commit AWS state, credentials, keys, or personal customer data. Example URLs
-must be replaced with your own repository URL. Nothing has been published for you.
-
-## Official references
-- Docker setup: https://docs.docker.com/get-started/get-docker/
-- Nginx proxy module: https://nginx.org/en/docs/http/ngx_http_proxy_module.html
-- Python HTTP server: https://docs.python.org/3/library/http.server.html
-- AWS security groups: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-reference.html
-
-## License
-MIT. See [LICENSE](LICENSE).
-
-## Recorded automated replay
-
-An assistant-executed portable replay reproduced and recovered five failure types
-on 2026-10-17. See [actual results](evidence/automated-replay/summary.json) and the
-individual case reports in evidence/automated-replay/.
-
-This uses a Python proxy, actual local file permissions, and Linux /dev/full for
-an injected ENOSPC write error. It does not validate Nginx, Docker, actual filesystem
-capacity exhaustion, systemd, or AWS. The five-second application delay and network
-connection failures are real local process behavior, not mocked unit-test responses.
-
-To rerun on a suitable Linux host:
-```bash
-python3 scripts/portable_replay.py
-```
-This writes results under evidence/automated-replay/. It intentionally fails if your
-executing identity bypasses directory permission checks. Use an ordinary Linux user.
-The portable proxy is test tooling only. This automated execution is not evidence
-that the repository owner independently completed the investigation exercises.
