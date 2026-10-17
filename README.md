@@ -72,7 +72,7 @@ curl -i -X POST http://127.0.0.1:8080/notes
 Notes and control files are temporary and disappear when containers are recreated.
 This application is for a private lab, not production hosting.
 
-## 4. Complete your first incident
+## 4. Complete first incident
 Copy templates/ticket.md to evidence/LAB-001.md. Then:
 ```bash
 bash scripts/lab.sh inject stopped-backend
